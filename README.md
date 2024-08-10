@@ -30,8 +30,8 @@ These platforms are:
 
  IT and Cybersecurity companies collect massive amounts of information that could be used for threat analysis and intelligence. Being one of those companies, Cisco assembled a large team of security practitioners called Cisco Talos to provide actionable intelligence, visibility on indicators, and protection against emerging threats through data collected from their products. 
 
- Task 1
- Task 2
+ [Practical Analysis](./Task-1.md)
+ 
 
 
 
