@@ -1,12 +1,13 @@
 # INTRODUCTION TO CYBER THREAT INTELLIGENCE
 
-Use the information from the SIEM dashboard and answer all the questions threat intel flow chart below.
-
+## Information from the SIEM Dashboard 
 ![alt text](image.png)
 
 ## Threat Intel Flow chart
 
 ![alt text](image-1.png)
+
+## Questions
 
 1. What was the threat actor's extraction IP address?
 
