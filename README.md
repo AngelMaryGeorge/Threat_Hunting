@@ -90,4 +90,4 @@ rule helloworld_checker{
 
 ```
 
-[Practical Analysis Using Loki](./)
+[Practical Analysis Using Loki](./Loki.md)
