@@ -32,6 +32,62 @@ These platforms are:
 
  [Practical Analysis](./Task-1.md)
  
+# Yara
 
+Yara can identify information based on both binary and textual patterns, such as hexadecimal and strings contained within a file. 
+Rules are used to label these patterns. For example, Yara rules are frequently written to determine if a file is malicious or not, based upon the features - or patterns - it presents.
 
+#### Examples of Yara Rules
 
+ - To search a directory for all files containing "Hello World!"
+
+ ```
+rule helloworld_checker{
+	strings:
+		$hello_world = "Hello World!"
+    condition:
+		$hello_world
+}
+```
+
+ - To match "Hello World" or "hello world" or "HELLO WORLD"
+
+ ```
+ rule helloworld_checker{
+	strings:
+		$hello_world = "Hello World!"
+		$hello_world_lowercase = "hello world"
+		$hello_world_uppercase = "HELLO WORLD"
+
+	condition:
+		any of them
+ }
+
+ ```
+
+  - Rule rule matches if there are less than or equal to ten occurrences of the "Hello World!" string
+
+  ```
+ rule helloworld_checker{
+	strings:
+		$hello_world = "Hello World!"
+
+	condition:
+        #hello_world <= 10
+}
+
+```
+ - Rule matches if both conditions are true
+
+ ```
+ rule helloworld_checker{
+	strings:
+		$hello_world = "Hello World!" 
+        
+        condition:
+	        $hello_world and filesize < 10KB 
+}
+
+```
+
+[Practical Analysis Using Loki](./)
