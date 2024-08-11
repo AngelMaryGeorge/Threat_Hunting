@@ -1,4 +1,4 @@
-# Introduction to threat Intelligence
+# Introduction to Threat Intelligence
 
 Threat Intelligence is the analysis of data and information using tools and techniques to generate meaningful patterns on how to mitigate against potential risks associated with existing or emerging threats targeting organisations, industries, sectors or governments.
 
